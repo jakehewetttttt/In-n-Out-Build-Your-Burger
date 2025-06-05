@@ -31,6 +31,8 @@ Credits & Resources
 Logos and images from official In-N-Out and free image sites.
 
 Code assisted by ChatGPT for 
+1.<!--AI used to display the selected burger ingredients and update the total price-->
+2.
 
 Inspiration from course materials and web tutorials.
 
