@@ -14,29 +14,26 @@ HOW TO USE WEBISTE
 
 
 
-File Structure
-index.html → Main homepage with welcome and start button
+FILE STRUCTURE 
 
-about.html → Information about In-N-Out
+-index.html → Main homepage with welcome and start button
+-about.html → Information about In-N-Out
+-order.html → Burger builder interface with ingredient selections
+-secret.html → Special secret burger page
+-styles.css → Stylesheet for the entire site’s look and feel
+-script.js → Handles user input, burger building logic, and price calculation
 
-order.html → Burger builder interface with ingredient selections
-
-secret.html → Special secret burger page
-
-styles.css → Stylesheet for the entire site’s look and feel
-
-script.js → Handles user input, burger building logic, and price calculation
-
-Credits & Resources
+CREDITS AND RESOURCES
 Logos and images from official In-N-Out and free image sites.
 
-Code assisted by ChatGPT for 
+CODE ASSISTED BY CHATGPT
 1.<!--AI used to display the selected burger ingredients and update the total price-->
 2.<!-- AI used for the syntax to create the images that are displayed -->
+3. <!--AI used for syntax of the button to get to and create the secret menu-->
+
+Inspiration came from my last project for the AP test the mcdoanlds menu but this time as In n Out with some differnt changes
 
 
-
-Inspiration from course materials and web tutorials.
 
 
 
