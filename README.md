@@ -23,6 +23,8 @@ FILE STRUCTURE
 -styles.css → Stylesheet for the entire site’s look and feel
 -script.js → Handles user input, burger building logic, and price calculation
 
+![](Screenshot\ 2025-06-05\ 3.04.42\ PM.png)
+
 CREDITS AND RESOURCES
 Logos and images from official In-N-Out and free image sites.
 
