@@ -1,83 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Build Your Burger</title>
-  <link rel="stylesheet" href="styles.css" />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Build Your Burger</title>
+ <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="order-page">
 
-  <header>
-    <img src="https://logos-world.net/wp-content/uploads/2022/02/In-N-Out-Burger-Symbol.png" alt="In-N-Out Logo" class="logo" />
-    <h1>Customize Your In-N-Out Burger</h1>
-  </header>
+  <!-- AI used for the syntax to create the images that are displayed -->
 
-  <main>
-    <form id="burgerForm">
+ <header>
+   <img src="https://logos-world.net/wp-content/uploads/2022/02/In-N-Out-Burger-Symbol.png" alt="In-N-Out Logo" class="logo" />
+   <h1>Customize Your In-N-Out Burger</h1>
+   <a href="secret.html" class="order-button">Secret Menu</a>
+ </header>
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Lettuce" data-price="0.25" />
-          Lettuce
-        </label>
-        <img src="https://www.veggiesmadeeasy.com/foodservice/wp-content/uploads/sites/2/2017/03/Better-Burger-Leaf-1.jpg" alt="Lettuce" class="ingredient-img" />
-      </div>
+ <main>
+   <form id="burgerForm">
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Tomato" data-price="0.25" />
-          Tomato
-        </label>
-        <img src="https://spiritsandspice.com/cdn/shop/articles/Sliced_Tomatoes_1024x1024.jpg?v=1537657027" alt="Tomato" class="ingredient-img" />
-      </div>
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Lettuce" data-price="0.25" />
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Cheese" data-price="0.50" />
-          Cheese
-        </label>
-        <img src="https://www.in-n-out.com/Frontend-Assembly/Telerik.Sitefinity.Frontend/content/images/menu/ingredients/cheese.jpg?package=INNOUT" alt="Cheese" class="ingredient-img" />
-      </div>
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://www.veggiesmadeeasy.com/foodservice/wp-content/uploads/sites/2/2017/03/Better-Burger-Leaf-1.jpg" alt="Lettuce" class="ingredient-img" />
+     </div>
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Onion" data-price="0.25" />
-          Onion
-        </label>
-        <img src="https://www.simplyrecipes.com/thmb/BwvDhdeijr5K7gdKEkVpwsHojyc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SimplyRecipes_WedgeSaladSandwich_METHOD_1-ce325a265c5343c0893dad6358d620c1.jpg" alt="Onion" class="ingredient-img" />
-      </div>
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Tomato" data-price="0.25" />
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Animal Sauce" data-price="0.50" />
-          Animal Sauce
-        </label>
-        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2022/04/Homemade-Rich-Creamy-Sweet-and-Salty-In-N-Out-Sauce-with-Fries.jpg" alt="Animal Sauce" class="ingredient-img" />
-      </div>
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://spiritsandspice.com/cdn/shop/articles/Sliced_Tomatoes_1024x1024.jpg?v=1537657027" alt="Tomato" class="ingredient-img" />
+     </div>
 
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Cheese" data-price="0.50" />
 
-      <div class="ingredient-option">
-        <label>
-          <input type="checkbox" value="Double Patty" data-price="1.50" />
-          Double Patty
-        </label>
-        <img src="https://www.hauteandhealthyliving.com/wp-content/uploads/2022/08/frozen-burger-recipe-10-500x375.jpg" alt="Double Patty" class="ingredient-img" />
-      </div>
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://www.in-n-out.com/Frontend-Assembly/Telerik.Sitefinity.Frontend/content/images/menu/ingredients/cheese.jpg?package=INNOUT" alt="Cheese" class="ingredient-img" />
+     </div>
 
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Onion" data-price="0.25" />
 
-      <button type="button" id="submitBtn">Build My Burger</button>
-    </form>
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://www.simplyrecipes.com/thmb/BwvDhdeijr5K7gdKEkVpwsHojyc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SimplyRecipes_WedgeSaladSandwich_METHOD_1-ce325a265c5343c0893dad6358d620c1.jpg" alt="Onion" class="ingredient-img" />
+     </div>
 
-    <section id="result">
-      <h2>Your Burger:</h2>
-      <ul id="burgerOutput"></ul>
-      <h3>Total Price: $<span id="totalPrice">0.00</span></h3>
-    </section>
-  </main>
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Animal Sauce" data-price="0.50" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://insanelygoodrecipes.com/wp-content/uploads/2022/04/Homemade-Rich-Creamy-Sweet-and-Salty-In-N-Out-Sauce-with-Fries.jpg" alt="Animal Sauce" class="ingredient-img" />
+     </div>
+
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Patty" data-price="3.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://www.hauteandhealthyliving.com/wp-content/uploads/2022/08/frozen-burger-recipe-10-500x375.jpg" alt="Double Patty" class="ingredient-img" />
+     </div>
 
 
-  <script src="script.js"></script>
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Coke" data-price="1.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://www.webstaurantstore.com/images/products/large/473849/1928114.jpg" alt="Coke" class="ingredient-img" />
+     </div>
+
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Sprite" data-price="1.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://s7d1.scene7.com/is/image/mcdonalds/DC_202212_0721_MediumSprite_Glass_1564x1564-1:product-header-mobile?wid=1313&amp;hei=1313&amp;dpr=off" alt="Sprite" class="ingredient-img" />
+     </div>
+
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Fanta" data-price="1.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://i.pinimg.com/736x/12/03/bc/1203bc70590271c0fcfb9ce798a370a2.jpg" alt="Fanta" class="ingredient-img" />
+     </div>
+
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Diet Coke" data-price="1.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://cater-choice-assets.s3.eu-west-2.amazonaws.com/storage/images/product/210020020_03.jpg" alt="Diet Coke" class="ingredient-img" />
+     </div>
+
+     <div class="ingredient-option">
+       <label>
+         <input type="checkbox" value="Pepsi" data-price="1.00" />
+
+       </label>
+       <input type="number" min="1" value="1" class="quantity" />
+       <img src="https://cdnimg.webstaurantstore.com/images/products/large/473858/1928115.jpg" alt="Pepsi" class="ingredient-img" />
+     </div>
+
+     <button type="button" id="submitBtn">Build My Burger</button>
+   </form>
+ <!--AI used to display the selected burger ingredients and update the total price-->
+   <section id="result">
+     <h2>Your Burger:</h2>
+     <ul id="burgerOutput"></ul>
+     <h3>Total Price: $<span id="totalPrice">0.00</span></h3>
+   </section>
+ </main>
+
+ <script src="script.js"></script>
 </body>
 </html>
