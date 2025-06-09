@@ -12,6 +12,8 @@ HOW TO USE WEBISTE
 
 3. Click Build My Burger to see your burger’s components and total price.
 
+4. Secret Item once found you may add it to your orignal order with just a push of a button
+
 
 
 FILE STRUCTURE 
